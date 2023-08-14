@@ -1,0 +1,17 @@
+﻿@model string
+
+
+<div class="row">
+    <div class="card col-md-8 offset-3">
+        <div class="card-text">
+            <h3>Rol oluşturma paneli</h3>
+        </div>
+        <div class="card-body">
+            <form asp-action="Create" method="post">
+                <input type="text" class="form-control" name="name" />
+                <input type="submit" value="Oluştur" class="btn btn-success" />
+            </form>
+            
+        </div>
+    </div>
+</div>

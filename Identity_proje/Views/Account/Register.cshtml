@@ -1,0 +1,36 @@
+﻿@using Identity_proje.Models.DTOs;
+@model RegisterDTO
+
+<div class="row">
+    <div class="col col-md-8 offset-2">
+        <div class="card-body">
+            <form asp-action="Register" method="post">
+                <diV class="form-group">
+                    <label asp-for="UserName" class="form-control"></label>
+                    <input asp-for="UserName" class="form-control" type="text" />
+                    <span asp-validation-for="UserName" class="text-danger"></span>
+                </diV>
+                <diV class="form-group">
+                    <label asp-for="Mail" class="form-control"></label>
+                    <input asp-for="Mail" class="form-control" type="text" />
+                    <span asp-validation-for="Mail" class="text-danger"></span>
+                </diV>
+                <diV class="form-group">
+                    <label asp-for="Password" class="form-control"></label>
+                    <input asp-for="Password" class="form-control" type="text" />
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                </diV>
+                <div class="form-group">
+                  
+                   <input type="submit" value="Kayıt ol" class="btn btn-primary" />
+                    
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+
+
+</div>
+
